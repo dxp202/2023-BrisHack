@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private CharacterController controller;
-    [SerializeField] private float speed = 5;
+    [SerializeField] private float speed = 2;
     [SerializeField] private float gravity = -9.18f;
     [SerializeField] private float jumpHeight = 3f;
     [SerializeField] private Transform groundCheck;
@@ -32,11 +32,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey("left shift") && isGrounded)
         {
-            speed = 5;
+            speed = 2;
         }
         else
         {
-            speed = 5;
+            speed = 2;
         }
 
         float x = Input.GetAxis("Horizontal");
